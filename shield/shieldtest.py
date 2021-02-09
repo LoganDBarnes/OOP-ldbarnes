@@ -8,7 +8,7 @@ class ShieldTest(unittest.TestCase):
         material : str = "steel"
         weight : int = 10
         color : str = "silver"
-        thrown : bool = 0
+        thrown : bool = False
 
         shield : Shield = Shield(style, material, weight, color, thrown)
         self.assertEqual(shield.style,style)
@@ -22,7 +22,7 @@ class ShieldTest(unittest.TestCase):
         material : str = "vibranium"
         weight : int = 12
         color : str = "red, white, and blue"
-        thrown : bool = 0
+        thrown : bool = False
 
         shield : Shield = Shield(style, material, weight, color, thrown)
         self.assertEqual(shield.style,style)
@@ -31,10 +31,10 @@ class ShieldTest(unittest.TestCase):
         self.assertEqual(shield.color,color)
         self.assertEqual(shield.thrown,thrown)
 
-        if shield.thrown == 0:
+        if shield.thrown == False:
             print("Captain America throws his mighty shield!")
         shield.throw()
-        self.assertEqual(shield.thrown,thrown == 1)
+        self.assertEqual(shield.thrown, True)
         
 if __name__ == '__main__':
     unittest.main()

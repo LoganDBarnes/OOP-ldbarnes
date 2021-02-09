@@ -28,4 +28,4 @@ class Shield:
         return self._thrown
 
     def throw(self) -> None:
-        self._thrown = (self._thrown == 1)
+        self._thrown = True
