@@ -11,7 +11,7 @@
 
 | Assignment | Due Date | Status | Location | Notes |
 |-----------:|:--------:|:------:|:---------:|:------|
-| 1 - Python Object  | 2-8-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/shield | Shield object with test |
+| 1 - Python Object  | 2-8-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/shield | Shield object with test |
 
 ## References
 
