@@ -1,11 +1,11 @@
 class Shield:
 
-    def __init__(self, style : str, material : str, weight : int, broken : bool) -> None:
+    def __init__(self, style : str, material : str, weight : int, color: str) -> None:
 
-        self._style : str = round
-        self._material : str = vibranium
+        self._style : str = style
+        self._material : str = material
         self._color : str = color
-        self._weight : int = 12
+        self._weight : int = weight
 
     @property
     def style(self) -> str:
