@@ -12,8 +12,8 @@ namespace shield {
 
         public: Shield(std::string style, std::string material, int weight, std::string color, bool thrown);
 
-        public: void throwShield();
         public: bool thrown();
+        public: void throwShield();
         
     };
 }
