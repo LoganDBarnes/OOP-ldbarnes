@@ -4,7 +4,7 @@
 This is a translation of the shield objected originally created in Python. There are two tests that verify that the shield object can be made and thrown.
 
 ## Screenshot
-![Alt text](/TestsPassedhw2.png?raw=true "Tests Passed")
+![Alt text](./TestsPassedhw2.png?raw=true "Tests Passed")
 
 ## References
 
