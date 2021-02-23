@@ -31,6 +31,6 @@ namespace shield {
     }
 
     bool Shield::thrown() {
-        return m_thrown == 0;
+        return m_thrown;
     }
 }

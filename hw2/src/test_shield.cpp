@@ -33,9 +33,9 @@ TEST(Shield, shieldThrow) {
   ASSERT_EQ(shield.weight(), weight);
   ASSERT_EQ(shield.thrown(), thrown);
 
-  if (shield.thrown == false) {
-    print("Captain America throws his mighty shield!");
-    shield.throw();
+  if (shield.thrown() == false) {
+    printf("Captain America throws his mighty shield!");
+    shield.throwShield();
     ASSERT_EQ(shield.thrown(), true);
   }
 }
