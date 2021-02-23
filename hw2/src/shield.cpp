@@ -1,7 +1,36 @@
 #include "shield.h"
 #include <stdexcept>
 
-namespace shield{
+namespace shield {
 
-    Shield::Shield(std::string style, std::string material, int weight, std::string color, bool thrown)
+    Shield::Shield(std::string style, std::string material, std::string color, int weight, bool thrown) {
+        m_style = style;
+        m_material = material;
+        m_color = color;
+        m_weight = weight;
+        m_thrown = thrown;
+    }
+
+    void Shield::throwShield() {
+        m_thrown = true;
+    }
+
+    std::string Shield::style() {
+        return m_style;
+    }
+    std::string Shield::material() {
+        return m_material;
+    }
+
+    std::string Shield::color() {
+        return m_color;
+    }
+
+    int Shield::weight() {
+        return m_weight;
+    }
+
+    bool Shield::thrown() {
+        return m_thrown == 0;
+    }
 }
