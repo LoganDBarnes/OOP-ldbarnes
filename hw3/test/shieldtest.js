@@ -1,6 +1,6 @@
 const assert = require('assert');
 const chai = require('chai');
-const shield = require('../hello');
+const Shield  = require('../shield');
 
 const expect = chai.expect;
 const assertEq = assert.deepStrictEqual
@@ -14,7 +14,7 @@ describe('Shield', function() {
       const weight = 10
       const thrown = false
 
-      const shield = Shield = new shield.Shield(style, material, color, weight, thrown)
+      const shield = new Shield.Shield(style, material, color, weight, thrown)
       assertEq(shield.style,style)
       assertEq(shield.material,material)
       assertEq(shield.color,color)
@@ -24,27 +24,25 @@ describe('Shield', function() {
   });
 });
 
-describe('Shield', function() {
-  describe('#construct()', function() {
-    it('shields can be made', function() {
-	    const style = "round"
-      const material = "vibranium"
-      const color = "red, white, and blue"
-      const weight = 12
-      const thrown = false
+describe('#construct()', function() {
+  it('shields can be thrown', function() {
+    const style = "round"
+    const material = "vibranium"
+    const color = "red, white, and blue"
+    const weight = 12
+    const thrown = false
 
-      const shield = Shield = new shield.Shield(style, material, color, weight, thrown)
-      assertEq(shield.style,style)
-      assertEq(shield.material,material)
-      assertEq(shield.color,color)
-      assertEq(shield.weight,weight)
-      assertEq(shield.thrown,thrown)
+    const shield = new Shield.Shield(style, material, color, weight, thrown)
+    assertEq(shield.style,style)
+    assertEq(shield.material,material)
+    assertEq(shield.color,color)
+    assertEq(shield.weight,weight)
+    assertEq(shield.thrown,thrown)
 
-      if (shield.thrown == false){
-        console.log("Captain America throws his mighty shield!")
-        shield.throwShield()
-        self.assertEqual(shield.thrown, true)
-      }
-    });
+    if (shield.thrown == false){
+      console.log("Captain America throws his mighty shield!")
+      shield.throwShield()
+      assertEq(shield.thrown, true)
+    }
   });
 });

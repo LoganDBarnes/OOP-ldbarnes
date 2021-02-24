@@ -1,33 +1,37 @@
 class Shield {
     constructor(style, material, color, weight, thrown) {
-        this.style = 'style'
-        this.material = 'material'
-        this.color = 'color'
-        this.weight = 0
-        this.thrown = false
+        this._style = style
+        this._material = material
+        this._color = color
+        this._weight = weight
+        this._thrown = thrown
     }
 
     throwShield() {
-        this.thrown = true
+        this._thrown = true
     }
 
     get style() {
-        return this.style
+        return this._style
     }
 
     get material() {
-        return this.material
+        return this._material
     }
     
     get color() {
-        return this.color
+        return this._color
     }
 
     get weight() {
-        return this.weight
+        return this._weight
     }
 
     get thrown() {
-        return this.thrown
+        return this._thrown
     }
+
+
 }
+
+module.exports = {'Shield': Shield}
