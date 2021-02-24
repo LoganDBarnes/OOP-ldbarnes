@@ -4,15 +4,11 @@ class Shield {
         this.material = 'material'
         this.color = 'color'
         this.weight = 0
-        this.thrown = False
-    }
-
-    inHand() {
-        return this.thrown == False
+        this.thrown = false
     }
 
     throwShield() {
-        this.thrown = True
+        this.thrown = true
     }
 
     get style() {
@@ -20,7 +16,7 @@ class Shield {
     }
 
     get material() {
-        return this.color
+        return this.material
     }
     
     get color() {
@@ -28,7 +24,7 @@ class Shield {
     }
 
     get weight() {
-        return this.color
+        return this.weight
     }
 
     get thrown() {

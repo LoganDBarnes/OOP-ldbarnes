@@ -9,17 +9,17 @@ describe('Shield', function() {
   describe('#construct()', function() {
     it('shields can be made', function() {
 	    const style = "round"
-        const material = "steel"
-        const color = "silver"
-        const weight = 10
-        const thrown = False
+      const material = "steel"
+      const color = "silver"
+      const weight = 10
+      const thrown = false
 
-        const shield = Shield = new shield.Shield(style, material, color, weight, thrown)
-        assertEq(shield.style,style)
-        assertEq(shield.material,material)
-        assertEq(shield.color,color)
-        assertEq(shield.weight,weight)
-        assertEq(shield.thrown,thrown)
+      const shield = Shield = new shield.Shield(style, material, color, weight, thrown)
+      assertEq(shield.style,style)
+      assertEq(shield.material,material)
+      assertEq(shield.color,color)
+      assertEq(shield.weight,weight)
+      assertEq(shield.thrown,thrown)
     });
   });
 });
