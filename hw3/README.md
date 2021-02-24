@@ -1,32 +1,13 @@
-# Hello
+# JavaScript Object Assignment
 
-Make a hello function that can return greeting messages.  The project structure is to have the functionality in the `hello` directory, and the corresponding tests in `hellotest`
+## Shield Object
+This is a translation of the shield objected originally created in Python. There are two tests that verify that the shield object can be made and thrown.
 
-```
-*.js
-```
-
-## Test
-
-```bash
-test/*test.js
-```
-## Clean-Build-Test Screen Capture
-
-![run-test.png](run-test.png)
-
-## Docker
-
-To create a reproducible build (advanced) and you have docker installed, you can do the following:
-
-```bash
-docker build -t js-hello .
-docker run -i --rm -t js-hello npm test # test
-docker run -i --rm -t js-hello node main.js # run
-```
+## Screenshot
+![Alt text](./TestsPassedhw3.png?raw=true "Tests Passed")
 
 ## References
 
-1. [Python Unit tests](https://docs.python.org/2/library/unittest.html)
-
-
+1. [Git Started](https://docs.google.com/document/d/1M0YeBfFPy5YPpfX7312R9-IldjagimvEma_YhgeLPcw/edit#heading=h.ssqvh5gmotj4)
+2. [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+3. [How to turn in assignments](https://docs.google.com/document/d/1tRbrd6zpvXDmZ009OPTY-vZMYXF_LTwlFL9yHxoo1g8/edit)

@@ -12,7 +12,7 @@
 | Assignment | Due Date | Status | Location | Notes |
 |-----------:|:--------:|:------:|:---------:|:------|
 | 1 - Python Object | 2-11-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/shield | Shield object with test |
-| 2 - C++ Object | 2-23-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/hw2 | Shield object in C++ |
+| 2 - C++ Object | 2-23-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/hw2 | Shield object in C++ |
 | 3 - JS Object | 2-23-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/hw3 | Shield object in JavaScript |
 
 ## References
