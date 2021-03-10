@@ -3,16 +3,14 @@
 
 namespace shield {
     
-    Armor::Armor(std::string material, double defense) {
-        m_material = material;
-        m_defense = defense;
-    }
+    Armor::Armor(const std::string &material, double defense) 
+    : m_material(material), m_defense(defense){}
 
-    std::string Armor::material() {
+    const std::string Armor::material() const {
         return m_material;
     }
 
-    double Armor::defense() {
+    double Armor::defense() const {
         return m_defense;
     }
 }

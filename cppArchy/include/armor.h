@@ -5,15 +5,15 @@ namespace shield {
     
     class Armor {
         private: 
-        std::string m_material;
+        const std::string m_material;
         double m_defense;
 
-        public: Armor(std::string material, double defense);
+        public: Armor(const std::string &material, double defense);
 
         public: void throwShield();
 
-        public: std::string material();
-        public: double defense();
+        public: const std::string material() const;
+        public: double defense() const;
         
     };
 }
