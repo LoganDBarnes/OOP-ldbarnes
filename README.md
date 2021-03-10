@@ -15,7 +15,7 @@
 | 2 - C++ Object | 2-23-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/hw2 | Shield object in C++ |
 | 3 - JS Object | 2-23-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/hw3 | Shield object in JavaScript |
 | 4 - Python Hierarchy | 3-9-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/pyArchy | Shield hierarchy in Python |
-| 5 - C++ Hierarchy | 3-9-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/CppArchy | Shield hierarchy in C++ |
+| 5 - C++ Hierarchy | 3-9-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/cppArchy | Shield hierarchy in C++ |
 
 ## References
 
