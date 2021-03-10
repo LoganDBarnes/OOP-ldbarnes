@@ -2,7 +2,7 @@
 
 ## Shield Hierarchy
 This is a shield object originally created in hw1, then translated into C++. There are tests that verify that the shield object can be made and thrown.
-The shield is now in a hierarchy with parent class armor, which is also tested.
+The shield is now in a hierarchy with parent class armor, which is also tested. Effiency improved in armor class using constness.
 
 ## Screenshot
 ![Alt text](./TestsPassedhw5.png?raw=true "Tests Passed")
