@@ -12,8 +12,12 @@ class Armor:
         return self._defense
 
 
-class Shield:
-    def __init__(self, style : str, color : int, weight: str, thrown: bool) -> None:
+class Shield(Armor):
+    def __init__(self, material : str,  defense: int, 
+        style : str, color : int, weight: str, thrown: bool) -> None:
+        
+        Armor.__init__(self, material, defense)
+
         self._style : str = style
         self._color : str = color
         self._weight : int = weight

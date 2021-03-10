@@ -3,6 +3,15 @@ import unittest
 from shield import Shield
 
 class ShieldTest(unittest.TestCase):
+
+    def testArmor(self):
+        material : str = "steel"
+        defense : int = 100
+        armor : Shield = Shield(material, defense, "kite", "blue", 10, false)
+
+        self.assertEqual(armor.material,defense)
+        self.assertEqual(armor.material,defense)
+
     def testDefaultShield(self):
         style : str = "round"
         color : str = "silver"
