@@ -5,12 +5,16 @@ using namespace std;
 using namespace shield;
 
 TEST(Shield, Constructor) {
+  std::string material = "steel";
+  double defense = 25.0;
   string style = "round";
   string color = "silver";
   int weight = 10;
   bool thrown = false;
 
-  Shield shield(style, color, weight, thrown);
+  Shield shield(material, defense, style, color, weight, thrown);
+  ASSERT_EQ(shield.material(), material);
+  ASSERT_EQ(shield.defense(), defense);
   ASSERT_EQ(shield.style(), style);
   ASSERT_EQ(shield.color(), color);
   ASSERT_EQ(shield.weight(), weight);
@@ -18,12 +22,16 @@ TEST(Shield, Constructor) {
 }
 
 TEST(Shield, shieldThrow) {
+  std::string material = "vibranium";
+  double defense = 100.0;
   string style = "round";
   string color = "red, white, and blue";
   int weight = 12;
   bool thrown = false;
 
-  Shield shield(style, color, weight, thrown);
+  Shield shield(material, defense, style, color, weight, thrown);
+  ASSERT_EQ(shield.material(), material);
+  ASSERT_EQ(shield.defense(), defense);
   ASSERT_EQ(shield.style(), style);
   ASSERT_EQ(shield.color(), color);
   ASSERT_EQ(shield.weight(), weight);

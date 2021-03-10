@@ -8,11 +8,11 @@ namespace shield {
         m_defense = defense;
     }
 
-    std::string Shield::material() {
+    std::string Armor::material() {
         return m_material;
     }
 
-    double Shield::defense() {
+    double Armor::defense() {
         return m_defense;
     }
 }

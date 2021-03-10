@@ -1,16 +1,18 @@
 #pragma once
 #include <string>
+#include "armor.h"
 
 namespace shield {
     
-    class Shield {
+    class Shield: public Armor {
         private: 
         std::string m_style;
         std::string m_color;
         int m_weight;
         bool m_thrown;
 
-        public: Shield(std::string style, std::string color, int weight, bool thrown);
+        public: Shield(std::string material, double defense, 
+                    std::string style, std::string color, int weight, bool thrown);
 
         public: void throwShield();
 
@@ -19,6 +21,5 @@ namespace shield {
         public: int weight();
         public: bool thrown();
        
-        
     };
 }
