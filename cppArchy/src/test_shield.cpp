@@ -6,14 +6,12 @@ using namespace shield;
 
 TEST(Shield, Constructor) {
   string style = "round";
-  string material = "steel";
   string color = "silver";
   int weight = 10;
   bool thrown = false;
 
-  Shield shield(style, material, color, weight, thrown);
+  Shield shield(style, color, weight, thrown);
   ASSERT_EQ(shield.style(), style);
-  ASSERT_EQ(shield.material(), material);
   ASSERT_EQ(shield.color(), color);
   ASSERT_EQ(shield.weight(), weight);
   ASSERT_EQ(shield.thrown(), thrown);
@@ -21,14 +19,12 @@ TEST(Shield, Constructor) {
 
 TEST(Shield, shieldThrow) {
   string style = "round";
-  string material = "vibranium";
   string color = "red, white, and blue";
   int weight = 12;
   bool thrown = false;
 
-  Shield shield(style, material, color, weight, thrown);
+  Shield shield(style, color, weight, thrown);
   ASSERT_EQ(shield.style(), style);
-  ASSERT_EQ(shield.material(), material);
   ASSERT_EQ(shield.color(), color);
   ASSERT_EQ(shield.weight(), weight);
   ASSERT_EQ(shield.thrown(), thrown);
