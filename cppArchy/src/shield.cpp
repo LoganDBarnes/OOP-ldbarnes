@@ -3,9 +3,17 @@
 
 namespace shield {
 
+    Shield::Shield() : Armor("steel", 0.0) //default shield
+    {
+        m_style = "kite";
+        m_color = "blue";
+        m_weight = 10;
+        m_thrown = false;
+    }
+
     Shield::Shield(std::string material, double defense, 
                 std::string style, std::string color, int weight, bool thrown) 
-        : Armor(material, defense)
+        : Armor(material, defense) //base class constructor
     {
         m_style = style;
         m_color = color;

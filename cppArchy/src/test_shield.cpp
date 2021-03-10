@@ -7,8 +7,8 @@ using namespace shield;
 TEST(Shield, Constructor) {
   std::string material = "steel";
   double defense = 25.0;
-  string style = "round";
-  string color = "silver";
+  std::string style = "round";
+  std::string color = "silver";
   int weight = 10;
   bool thrown = false;
 
@@ -24,8 +24,8 @@ TEST(Shield, Constructor) {
 TEST(Shield, shieldThrow) {
   std::string material = "vibranium";
   double defense = 100.0;
-  string style = "round";
-  string color = "red, white, and blue";
+  std::string style = "round";
+  std::string color = "red, white, and blue";
   int weight = 12;
   bool thrown = false;
 
