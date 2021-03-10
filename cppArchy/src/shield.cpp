@@ -3,9 +3,8 @@
 
 namespace shield {
 
-    Shield::Shield(std::string style, std::string material, std::string color, int weight, bool thrown) {
+    Shield::Shield(std::string style, std::string color, int weight, bool thrown) {
         m_style = style;
-        m_material = material;
         m_color = color;
         m_weight = weight;
         m_thrown = thrown;
@@ -17,9 +16,6 @@ namespace shield {
 
     std::string Shield::style() {
         return m_style;
-    }
-    std::string Shield::material() {
-        return m_material;
     }
 
     std::string Shield::color() {
