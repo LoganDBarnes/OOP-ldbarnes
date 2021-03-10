@@ -1,10 +1,10 @@
 class Armor:
-    def __init__(self, material : str,  defense: int) :
+    def __init__(self, material : str,  defense: float) :
         self._material = material
         self._defense = defense
 
     @property
-    def material(self) -> str:
+    def material(self):
         return self._material
 
     @property
@@ -13,8 +13,8 @@ class Armor:
 
 
 class Shield(Armor):
-    def __init__(self, material : str,  defense: int, 
-        style : str, color : int, weight: str, thrown: bool) -> None:
+    def __init__(self, material : str, defense: float, 
+        style : str, color : str, weight: int, thrown: bool) -> None:
         
         Armor.__init__(self, material, defense)
 
