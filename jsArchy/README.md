@@ -1,10 +1,11 @@
-# JavaScript Object Assignment
+# JavaScript Hierarchy Assignment
 
-## Shield Object
-This is a translation of the shield objected originally created in Python. There are two tests that verify that the shield object can be made and thrown.
+## Shield Hierarchy
+This is a shield object originally created in hw1, then translated into JavaScript. There are tests that verify that the shield object can be made and thrown.
+The shield is now in a hierarchy with parent class armor, which is also tested.
 
 ## Screenshot
-![Alt text](./TestsPassedhw3.png?raw=true "Tests Passed")
+![Alt text](./TestsPassedhw6.png?raw=true "Tests Passed")
 
 ## References
 
