@@ -1,6 +1,6 @@
 const assert = require('assert');
 const chai = require('chai');
-const Shield  = require('../shield');
+const Shield  = require('../shield.mjs');
 
 const expect = chai.expect;
 const assertEq = assert.deepStrictEqual
