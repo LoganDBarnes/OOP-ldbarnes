@@ -1,10 +1,10 @@
 # Pattern Assignment
 
-## Strategy Pattern JS
+## Strategy Pattern
 Description
 
 ## Screenshot
-![Alt text](./TestsPassedhw3.png?raw=true "Tests Passed")
+![Alt text](./TestsPassedhw2.png?raw=true "Tests Passed")
 
 ## References
 
