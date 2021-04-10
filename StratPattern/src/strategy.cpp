@@ -1,58 +1,69 @@
 #include "strategy.h"
 #include <stdexcept>
 #include <iostream>
-#include <fstream>
 #include <string>
+//using namespace std;
 
 namespace shippingStrat {
 
-    class Shipping {
-        public: enum shipType {standard, exped, overnight};
-
-        public: void setStrat(string type, double price);
-
-        private: Strategy *strategy;
-    };
-
+    //client
     class Strategy {
-        public: Strategy(shipType);
-        public: double price;
+        public: void getPrice();
     }
 
+    //strategies
     class Standard : public strategy {
-        public: Standard(double price): Strategy(price){};
-        return price = 1.0;
+        public: void getPrice() {
+            double price = weight * 1.0;
+            cout << "Standard price = " << price;
+        }
     }
 
     class Exped : public strategy {
-        public: Exped(double price): Strategy(price){};
-        return price = 2.0;
+        public: void getPrice() {
+            double price = weight * 2.0;
+            cout << "Expedited price = " << price;
+        }
     }
 
     class Overnight : public strategy {
-        public: Overnight(double price): Strategy(price){};
-        return price = 3.0;
+        public: void getPrice() {
+            double price = weight * 3.0;
+            cout << "Overnight price = " << price;
+        }
     }
 
-    void Shipping::setStrat(string type, double price) {
+    //context interface
+    class Shipping {
+        private: Strategy *m_strategy;
+
+        public: enum shipType {standard, exped, overnight};
+
+        public: void setStrat(int type);
+
+        
+    };
+
+    void Shipping::setStrat(int type) {
         if (type = "standard") {
-            strategy = new Standard(price);
+            strategy = new Standard();
         else if (type = "exped") {
-            strategy = new Exped(price);
+            strategy = new Exped();
         else if (type = "overnight") {
-            strategy = new Overnight(price);
+            strategy = new Overnight();
         }
     }
 
     int main() {
-        std::string select;
+        int select;
+        double weight;
         
         cout << "Enter number to select shipping method: Standard(0), Expedited(1), or Overnight(3)";
         cin >> select;
+        cout << "Enter weight";
+        cin >> weight;
 
-        while (select) {
-
-        }
+        Shipping.setStrat(select, weight)
 
         return 0;
     }
