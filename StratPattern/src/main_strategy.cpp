@@ -6,46 +6,53 @@ namespace shippingStrat {
 
     //client
     class Strategy {
-        public: void getPrice(); //prototype
+        public: double getCost(double weight); //prototype
     };
 
     //strategies
     class Standard : public Strategy {
         public: double price = 1.0;
-        public: void getPrice() {
-            cout << "Standard price = " << price;
+
+        public: double getCost(double weight) {
+            double cost = price * weight;
+            return cost;
         }
     };
 
     class Exped : public Strategy {
         public: double price = 2.0;
-        public: void getPrice() {
-            cout << "Expedited price = " << price;
+
+        public: double getCost(double weight) {
+            double cost = price * weight;
+            return cost;
         }
     };
 
     class Overnight : public Strategy {
         public: double price = 3.0;
-        public: void getPrice() {
-            cout << "Overnight price = " << price;
+
+        public: double getCost(double weight) {
+            double cost = price * weight;
+            return cost;
         }
     };
 
     //context interface
     class Shipping {
+
         private: Strategy *my_strategy; //strategy pointer
 
         public: void setStrat(Strategy *str) { //pick strat
             my_strategy = str;
         }
 
-        public: void getPrice() { //define getPrice depending on strat
-            my_strategy->getPrice();
+        public: double getCost(double weight) { //define getCost depending on strat
+            my_strategy->getCost(weight);
         }
     };
 
     int main(int argc, char** argv) {
-        //double weight;
+        double weight = 2.0;
         //cout << "Enter weight in lbs";
         //cin >> weight;
 
@@ -56,13 +63,16 @@ namespace shippingStrat {
         Shipping ship;
 
         ship.setStrat (&standard);
-        ship.getPrice();
+        cout << "Standard cost = ";
+        ship.getCost(weight);
 
         ship.setStrat (&exped);
-        ship.getPrice();
+        cout << "Expedited cost = ";
+        ship.getCost(weight);
 
         ship.setStrat (&overnight);
-        ship.getPrice();
+        cout << "Overnight cost = ";
+        ship.getCost(weight);
         
         return 0;
     }
