@@ -45,15 +45,9 @@ namespace shippingStrat {
     };
 
     int main(int argc, char** argv) {
-        //int select;
         //double weight;
-        
-        //cout << "Enter number to select shipping method: Standard(0), Expedited(1), or Overnight(3)";
-        //cin >> select;
-        //cout << "Enter weight";
+        //cout << "Enter weight in lbs";
         //cin >> weight;
-
-        //Shipping.setStrat(select, weight);
 
         Standard standard;
         Exped exped;
