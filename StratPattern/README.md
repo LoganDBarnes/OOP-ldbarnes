@@ -4,7 +4,7 @@
 Description
 
 ## Screenshot
-![Alt text](./TestsPassedhw2.png?raw=true "Tests Passed")
+![Alt text](./TestsPassedhw7.png?raw=true "Tests Passed")
 
 ## References
 
