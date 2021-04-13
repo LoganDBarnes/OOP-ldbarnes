@@ -16,9 +16,9 @@
 | 3 - JS Object | 2-23-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/hw3 | Shield object in JavaScript |
 | 4 - Python Hierarchy | 3-9-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/pyArchy | Shield hierarchy in Python |
 | 5 - C++ Hierarchy | 3-9-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/cppArchy | Shield hierarchy in C++ |
-| 6 - JS Hierarchy | 4-6-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/jsArchy | Shield hierarchy in JavaScript |
-| 7 - Pattern | 4-8-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/StratPattern | Strategy Pattern in JS |
-| 8 - Translate Pattern | 4-13-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/MementoPattern | Translation of Memento Pattern into JS |
+| 6 - JS Hierarchy | 4-6-21 | Not finished | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/jsArchy | Shield hierarchy in JavaScript |
+| 7 - Pattern | 4-8-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/StratPattern | Strategy Pattern in C++ |
+| 8 - Translate Pattern | 4-15-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/MementoPattern | Translation of Memento Pattern into JS |
 
 ## References
 
