@@ -6,7 +6,7 @@ using namespace std;
 
 namespace shippingStrat {
     
-    //client
+    //interface
     class Strategy { 
         public: double getCost(double weight)
         { return 0; } //will be redefined
@@ -43,7 +43,7 @@ namespace shippingStrat {
         }
     };
 
-    //context interface
+    //context
     class Shipping {
 
         private: Strategy *my_strategy; //strategy pointer
