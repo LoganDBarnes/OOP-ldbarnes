@@ -1,14 +1,15 @@
 #pragma once
+#include <iostream>
 #include <string>
+
+using namespace std;
 
 namespace shippingStrat {
     
     //client
     class Strategy { 
-        public: double getCost(double weight) //prototype
-        {
-            return 0;
-        }
+        public: double getCost(double weight)
+        { return 0; } //will be redefined
     };
 
     //strategies
@@ -17,6 +18,7 @@ namespace shippingStrat {
 
         public: double getCost(double weight) {
             double cost = price * weight;
+            cout << cost << "\n";
             return cost;
         }
     };
@@ -26,6 +28,7 @@ namespace shippingStrat {
 
         public: double getCost(double weight) {
             double cost = price * weight;
+            cout << cost << "\n";
             return cost;
         }
     };
@@ -35,6 +38,7 @@ namespace shippingStrat {
 
         public: double getCost(double weight) {
             double cost = (price * weight) + 2.0;
+            cout << cost << "\n";
             return cost;
         }
     };
