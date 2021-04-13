@@ -1,70 +1,75 @@
-#include "strategy.h"
-#include <stdexcept>
 #include <iostream>
 #include <string>
-//using namespace std;
+using namespace std;
 
 namespace shippingStrat {
 
     //client
     class Strategy {
-        public: void getPrice();
-    }
+        public: void getPrice(); //prototype
+    };
 
     //strategies
-    class Standard : public strategy {
+    class Standard : public Strategy {
+        public: double price = 1.0;
         public: void getPrice() {
-            double price = weight * 1.0;
             cout << "Standard price = " << price;
         }
-    }
+    };
 
-    class Exped : public strategy {
+    class Exped : public Strategy {
+        public: double price = 2.0;
         public: void getPrice() {
-            double price = weight * 2.0;
             cout << "Expedited price = " << price;
         }
-    }
+    };
 
-    class Overnight : public strategy {
+    class Overnight : public Strategy {
+        public: double price = 3.0;
         public: void getPrice() {
-            double price = weight * 3.0;
             cout << "Overnight price = " << price;
         }
-    }
+    };
 
     //context interface
     class Shipping {
-        private: Strategy *m_strategy;
+        private: Strategy *my_strategy; //strategy pointer
 
-        public: enum shipType {standard, exped, overnight};
+        public: void setStrat(Strategy *str) { //pick strat
+            my_strategy = str;
+        }
 
-        public: void setStrat(int type);
-
-        
+        public: void getPrice() { //define getPrice depending on strat
+            my_strategy->getPrice();
+        }
     };
 
-    void Shipping::setStrat(int type) {
-        if (type = "standard") {
-            strategy = new Standard();
-        else if (type = "exped") {
-            strategy = new Exped();
-        else if (type = "overnight") {
-            strategy = new Overnight();
-        }
-    }
-
-    int main() {
-        int select;
-        double weight;
+    int main(int argc, char** argv) {
+        //int select;
+        //double weight;
         
-        cout << "Enter number to select shipping method: Standard(0), Expedited(1), or Overnight(3)";
-        cin >> select;
-        cout << "Enter weight";
-        cin >> weight;
+        //cout << "Enter number to select shipping method: Standard(0), Expedited(1), or Overnight(3)";
+        //cin >> select;
+        //cout << "Enter weight";
+        //cin >> weight;
 
-        Shipping.setStrat(select, weight)
+        //Shipping.setStrat(select, weight);
 
+        Standard standard;
+        Exped exped;
+        Overnight overnight;
+
+        Shipping ship;
+
+        ship.setStrat (&standard);
+        ship.getPrice();
+
+        ship.setStrat (&exped);
+        ship.getPrice();
+
+        ship.setStrat (&overnight);
+        ship.getPrice();
+        
         return 0;
     }
 }
