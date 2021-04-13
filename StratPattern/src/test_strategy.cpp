@@ -1,4 +1,4 @@
-#include "main_strategy.cpp"
+#include "strategy.h"
 #include "gtest/gtest.h"
 
 using namespace shippingStrat;
