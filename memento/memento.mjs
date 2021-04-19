@@ -3,7 +3,7 @@ export class Memento {
         this._string1 = string1;
     }
 
-    get string1() { //get saved state
+    get savedState() {
         return this._string1;
     }
 }

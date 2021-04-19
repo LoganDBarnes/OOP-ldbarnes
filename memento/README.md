@@ -1,7 +1,7 @@
 # Pattern Assignment 2
 
 ## Memento Translation
-This is a translation of my partner's (Logan Emmert's) original Memento pattern program. It was translated from C++ to JS.
+This is a translation of my partner's (Logan Emmert's) original Memento pattern program. I translated it from C++ to JS. The memento pattern allows the saving of an object in another and restoration of the orignal object.
 
 ## Screenshot
 ![Alt text](./TestsPassedhw6.png?raw=true "Tests Passed")

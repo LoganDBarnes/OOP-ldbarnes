@@ -5,13 +5,13 @@ export class Originator {
         this._string1 = string1;
     }
 
-    set string1() {
+    set setString() {
         this._string1 = string1;
     }
 
     saveToMemento() {
-        Memento;
-        return Memento;
+        const memento1 = new Memento.Memento(string1);
+        return memento1;
     }
 
     restore(memento1){ //from memento
