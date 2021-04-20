@@ -6,7 +6,7 @@ class Originator {
         this._string1 = string1;
     }
 
-    setString() {
+    setString(string1) {
         this._string1 = string1;
     }
 
@@ -20,7 +20,7 @@ class Originator {
     }
 
     value() {
-        return this._string;
+        return this._string1;
     }
 }
 
