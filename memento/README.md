@@ -4,7 +4,7 @@
 This is a translation of my partner's (Logan Emmert's) original Memento pattern program. I translated it from C++ to JS. The memento pattern allows the saving of an object in another and restoration of the orignal object.
 
 ## Screenshot
-![Alt text](./TestsPassedhw6.png?raw=true "Tests Passed")
+![Alt text](./TestsPassedhw8.PNG?raw=true "Tests Passed")
 
 ## References
 

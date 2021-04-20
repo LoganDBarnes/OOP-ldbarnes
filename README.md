@@ -18,7 +18,7 @@
 | 5 - C++ Hierarchy | 3-9-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/cppArchy | Shield hierarchy in C++ |
 | 6 - JS Hierarchy | 4-6-21 | Not finished | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/jsArchy | Shield hierarchy in JavaScript |
 | 7 - Pattern | 4-8-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/StratPattern | Strategy Pattern in C++ |
-| 8 - Translate Pattern | 4-15-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/MementoPattern | Translation of Memento Pattern into JS |
+| 8 - Translate Pattern | 4-15-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/memento | Translation of Memento Pattern into JS |
 
 ## References
 
