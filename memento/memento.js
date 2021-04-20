@@ -1,9 +1,9 @@
-export class Memento {
+class Memento {
     constructor(string1) {
         this._string1 = string1;
     }
 
-    get savedState() {
+    savedState() {
         return this._string1;
     }
 }
