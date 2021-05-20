@@ -19,6 +19,7 @@
 | 6 - JS Hierarchy | 4-6-21 | Not finished | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/jsArchy | Shield hierarchy in JavaScript |
 | 7 - Pattern | 4-8-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/StratPattern | Strategy Pattern in C++ |
 | 8 - Translate Pattern | 4-15-21 | Done | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/memento | Translation of Memento Pattern into JS |
+| 9 - Final Project | 5-19-21 | In Progress | https://github.com/LoganDBarnes/OOP-ldbarnes/tree/main/final | Orlog Dice Game |
 
 ## References
 
